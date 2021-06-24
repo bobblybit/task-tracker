@@ -7,27 +7,7 @@ import { useState } from 'react'
 function App() {
 
   const [addTaskFormDisplay, setaddTaskFormDisplay] = useState(false)
-  const[tasks, setTasks] = useState(
-    [ {
-         id:1,
-         desc:'Doctors appointment',
-         day:'20 feb 2022',
-         reminder:true
-     },
-     {
-         id:2,
-         desc:'Pitching',
-         day:'20 feb 2022',
-         reminder:true
-     },
-     {
-         id:3,
-         desc:'goto club',
-         day:'20 feb 2022',
-         reminder:true
-     }
- ]
- )
+  const[tasks, setTasks] = useState([ ])
  
 //add task
 const addTask = (task) => {

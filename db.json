@@ -1,19 +1,22 @@
 {
-  "posts": [
+  "tasks": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+      "id":1,
+      "desc":"Doctors appointment",
+      "day":"20 feb 2022",
+      "reminder":true
+  },
+  {
+      "id":2,
+      "desc":"Pitching",
+      "day":"20 feb 2022",
+      "reminder":true
+  },
+  {
+      "id":3,
+      "desc":"goto club",
+      "day":"20 feb 2022",
+      "reminder":true
   }
+  ]
 }
