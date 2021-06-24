@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id":1,
+      "desc":"Doctors appointment",
+      "day":"20 feb 2022",
+      "reminder":true
+  },
+  {
+      "id":2,
+      "desc":"Pitching",
+      "day":"20 feb 2022",
+      "reminder":true
+  },
+  {
+      "id":3,
+      "desc":"goto club",
+      "day":"20 feb 2022",
+      "reminder":true
+  }
+  ]
+}
