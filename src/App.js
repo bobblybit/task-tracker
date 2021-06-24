@@ -36,7 +36,7 @@ const addTask = async (task) => {
    setTasks([...tasks, data])
   }
 
-  
+
 //delete tasks
 const deleteTask = async (id) => {
   await fetch(`http://localhost:5000/tasks/${id}`,{method:'DELETE'})
