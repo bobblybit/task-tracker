@@ -2,7 +2,7 @@ import Header from "./Components/Header"
 import Tasks from "./Components/Tasks"
 import AddTaskForm from "./Components/AddTaskForm"
 import { useState , useEffect } from 'react'
-
+import React from 'react'
 
 function App() {
 
@@ -53,7 +53,7 @@ const fetchtask = async (id) =>{
 //toggle rimder
 const toggleReminder = async (id) => {
 const taskToToggle = await fetchtask(id)
-const updTask = {... taskToToggle , reminder : !taskToToggle.reminder}
+const updTask = {...taskToToggle , reminder : !taskToToggle.reminder}
 
   const res = await fetch(`http://localhost:5000/tasks/${id}`,{
     method:"PUT", 
