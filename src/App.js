@@ -1,6 +1,10 @@
 import Header from "./Components/Header"
+import Footer from "./Components/Footer"
 import Tasks from "./Components/Tasks"
 import AddTaskForm from "./Components/AddTaskForm"
+import About from "./Components/About"
+import {BrowserRouter as Router , Route} from "react-router-dom"
+
 import { useState , useEffect } from 'react'
 import React from 'react'
 
@@ -68,18 +72,28 @@ const updTask = {...taskToToggle , reminder : !taskToToggle.reminder}
 }
 
   return (
+
+    <Router>
     <div className="container">
         <Header onAddClick = {() => setaddTaskFormDisplay(!addTaskFormDisplay)} 
         changeName= {addTaskFormDisplay} />
 
-        {addTaskFormDisplay && <AddTaskForm onAddTask = {addTask}/>}
+        
+        <Route path="/" exact render={(props) => (
+          <div>
+            {addTaskFormDisplay && <AddTaskForm onAddTask = {addTask}/>}
         {tasks.length > 0 ? (<Tasks tasks = {tasks} 
         onDelete={deleteTask}
         onToggle = {toggleReminder} 
         />)
         :('YAY!! You are done with your task')}
-    </div>
 
+            </div>
+        )} />
+        <Route path="/about" component={About}/>
+        <Footer/>
+    </div>
+    </Router>
     
   );
 }

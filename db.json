@@ -1,10 +1,16 @@
 {
   "tasks": [
     {
-      "desc": "shopping ",
-      "day": "tommorrw",
+      "desc": "goto the movies ",
+      "day": "tommorow",
       "reminder": true,
-      "id": 2
+      "id": 3
+    },
+    {
+      "desc": "goto church",
+      "day": "today",
+      "reminder": false,
+      "id": 4
     }
   ]
 }
