@@ -1,4 +1,6 @@
 import { useState } from "react"
+import React from 'react'
+
 
 const AddTaskForm = ({onAddTask}) => {
 
@@ -28,6 +30,7 @@ const onSubmit = (e) => {
 
 }
     return (
+        <div>
         <form className='add-form' onSubmit = {onSubmit}>
             <div className='form-control' >
                 <label>Task</label>
@@ -58,6 +61,7 @@ const onSubmit = (e) => {
             </div>
             <input type='submit' value='Save' className='btn btn-block'></input>
         </form>
+        </div>
     )
 }
 
